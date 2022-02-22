@@ -1,0 +1,22 @@
+body{
+    background-color: blueviolet;
+    
+}
+
+#my
+
+{
+    color:aqua;
+}
+.mine{
+    color:aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+}
+div h1{
+    color:aqua;
+}
+input[type="submit"] {
+    background-color: aqua;
+
+}
