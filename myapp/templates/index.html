@@ -45,14 +45,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="{% static 'JS/external.js' %}">
+     {
+
+     }   
+    </script>
 </head>
 <style>
     body{
-        background-color: black;
+        background-color: lightskyblue;
        padding-top: 100px;
        padding-left: 500px;
        padding-right: 500px;
-       padding-bottom: 100px;
+       padding-bottom:300px;
     }
     #new{
         background-color: aliceblue;
@@ -66,8 +71,8 @@
         <center><h1>Login page</h1></center><br>
         Username:<input type="text"><br><br>
         Password:<input type="password"><br><br>
-        <center><input type="submit" value="Login"></center
+        <center><input type="submit" value="Login" onclick="myfun()"></center>
     </form>
     </div>
-</body>
+   </body>
 </html>
