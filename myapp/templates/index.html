@@ -46,9 +46,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="{% static 'JS/external.js' %}">
-     {
+    
+    </script>
+    <script>
+        //  document.write("Haiiii")
+        // name="surya"
+        //  function fun(){
+        //      username="cybersquare"
+        //      var usrname="testing"
+        //      console.log("HAIIIIII")
+        //      console.log(name)
+        //  }
 
-     }   
+        //  function fun2(){
+        //      console.log(username);
+        //      console.log(usrname);
+        //  }
+        //  function fun3(){
+        //  num=prompt("Enter a number");
+        //  }
+        //  function fun4()
+        //  {
+        //      alert("The entered number is" +num);
+        //  }
+        //  function fun5()
+        //  {
+        //      num=prompt("Enter a number:");
+        //     if(num%2==0)
+        //     {
+        //         alert("Entered no is even");
+        //     }
+        //     else{
+        //         alert("Entered no is odd");
+        //     }
+        //  }
+        //     function fun6()
+        //     {
+        //         var student={fname:"sachin",lname:"pk"};
+        //         for(i in student){
+        //             console.log(i+" is "+" "+student[i]);
+
+        //         }
+        //     }
+                function fun7()
+                {
+                    var i,j;
+                    for(i=1;i<=4;i++)
+                    {
+                        for(j=1;j<=i;j++)
+                        {
+                            document.write("*"+" ");
+                        }
+                        document.write('<br>');
+                    }
+                }
+            
+         
     </script>
 </head>
 <style>
@@ -71,8 +124,17 @@
         <center><h1>Login page</h1></center><br>
         Username:<input type="text"><br><br>
         Password:<input type="password"><br><br>
-        <center><input type="submit" value="Login" onclick="myfun()"></center>
+        <center><input type="button" value="Login" onclick="fun()"></center>
     </form>
     </div>
+    <button onclick="fun2()">Submit</button>
+    <button onclick="fun3()">Click me</button>
+    <button onclick="fun4()">See result</button>
+    <button onclick="fun5()">Mathematics</button>
+    <button onclick="fun6()">Click</button>
+    <button onclick="fun7()">pattern</button>
+
+    
+
    </body>
 </html>
