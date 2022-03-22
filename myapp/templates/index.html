@@ -45,9 +45,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="{% static 'JS/external.js' %}">
-    
     </script>
+
     <script>
         //  document.write("Haiiii")
         // name="surya"
@@ -100,8 +101,28 @@
                         document.write('<br>');
                     }
                 }
-            
+                function fun6()
+                {
+            document.getElementById("amina").style.color="red";
+                }
+              function validate(){
+                 val1=document.getElementById("first").value;
+                 val2=document.getElementById("second").value;
+                 if(val1=="" && val2=="")
+                 {
+                    document.getElementById("para").innerHTML="";
+                 }
+                 
+              }
+              $(document).ready(function(){
+            $("p").css("background-color","cyan");
+            $('#btn').click(function(){
+            $(this).hide();
+
+        });
          
+        });
+       
     </script>
 </head>
 <style>
@@ -121,10 +142,12 @@
 <body>
     <div id="new">
     <form>
-        <center><h1>Login page</h1></center><br>
-        Username:<input type="text"><br><br>
-        Password:<input type="password"><br><br>
-        <center><input type="button" value="Login" onclick="fun()"></center>
+        <center><h1 id="amina">Login page</h1></center><br>
+        <p id="para"></p>
+        Username:<input type="text" id="first"><br><br>
+        Password:<input type="password" id="second"><br><br>
+        <center><input type="button" value="Login" onclick="validate()"></center><br><br>
+        <p>Enter into website</p>
     </form>
     </div>
     <button onclick="fun2()">Submit</button>
@@ -133,6 +156,7 @@
     <button onclick="fun5()">Mathematics</button>
     <button onclick="fun6()">Click</button>
     <button onclick="fun7()">pattern</button>
+    <button id="btn">New button</button>
 
     
 
